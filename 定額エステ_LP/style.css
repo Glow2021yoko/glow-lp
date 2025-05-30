@@ -1,0 +1,80 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #fff9f0;
+  font-family: sans-serif;
+}
+
+.image-wrapper img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.pcup {
+	max-width:800px;
+	margin:0 auto;
+	margin-top:5vw;
+}
+.pcup2 {
+	max-width:800px;
+	margin:0 auto;
+	margin-top:-23vw;
+}
+
+/* PC初期表示 */
+.pc {
+  display: block;
+}
+
+.sp {
+  display: none;
+}
+
+/* スマホ・タブレット用レイアウト */
+@media screen and (max-width: 768px) {
+  .pc {
+    display: none;
+  }
+
+  .sp {
+    display: block;
+  }
+
+  .shift-up {
+    margin-top: -65vw;
+  }
+
+  .shift-up2 {
+    margin-top: -55vw;
+  }
+
+  .shift-up3 {
+    margin-top: -50vw;
+  }
+}
+
+/* PC用ずらし画像 */
+@media screen and (min-width: 769px) {
+  .shift-up {
+    margin-top: -17vw;
+  }
+
+  .shift-up2 {
+    margin-top: -19.5vw;
+  }
+
+  .shift-up3 {
+    margin-top: -17vw;
+  }
+  .shift-up4 {
+    margin-top: -22vw;
+  }
+    .shift-up5 {
+    margin-top: -19vw;
+  }
+}
